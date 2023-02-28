@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div id="mainhero">
+    <h1>{{ websetting.hero_title }}</h1>
+    <p>{{ websetting.hero_text }}</p>
+</div>
+
+
+
+<div class="timeline-box" id="timeline">
+    <h2>{{ websetting.learning_title }}</h2>
+    <div class="mytimeline">
+        {% for timeline in timelines %}
+        <div class="time-linebox">
+            <h3>{{ timeline.name }}</h3>
+            <div class="line-box">
+                <div class="year">{{ timeline.year }}</div>
+                <p>{{ timeline.content }}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="time-linebox">
+            <h3>Yes! I am still learning</h3>
+        </div>
+    </div>
+</div>
+
+<div class="project-box" id="work">
+    <h2>{{ websetting.work_title }}</h2>
+
+    {% for work in works %}
+    <div class="project-box-single">
+        <div class="logo">
+            <img src="{{ work.image.url }}" alt="{{ work.name }}">
+        </div>
+        <h3>{{ work.name }}</h3>
+        <p>{{ work.content }}</p>
+        <p>Ref: {{ work.reference }}</p>
+    </div>
+    {% endfor %}
+
+</div>
+
+
+
+<div class="contact" id="contact">
+    <h2>{{ websetting.contact_title }}</h2>
+    <h3>Find in in social media</h3>
+    <ul class="social">
+        <li><a href="{{ websetting.facebook }}" target="_blank" title="Facebook">Facebook</a></li>
+        <li><a href="{{ websetting.twitter }}" target="_blank" title="Twitter">Twitter</a></li>
+        <li><a href="{{ websetting.linkedin }}" target="_blank" title="LinkedIn">LinkedIn</a></li>
+    </ul>
+    <span class="orclass">Or</span>
+    <h3>Let's Talk</h3>
+    <span class="ph"><a href="tel:{{ websetting.contact_no }}">{{ websetting.contact_no }}</a></span>
+</div>
+
+{% endblock %}
