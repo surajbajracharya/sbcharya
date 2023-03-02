@@ -26,3 +26,8 @@ $("#open-trigger").click(function(){
     $("#navitems").css('right','-36px');
     $("#close-tigger").css('right','10px');
 });
+
+$(".mobilemenus").click(function(){
+        $("#navitems").css('right','-99999px');
+    $("#close-tigger").css('right','-99999px');
+});

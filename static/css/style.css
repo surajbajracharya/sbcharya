@@ -221,6 +221,7 @@ ul.social li a:hover {
     color: #fff;
 }
 
+#open-trigger,
 #itemtrigger,
 #close-tigger {
     display: none;
@@ -242,8 +243,13 @@ ul.social li a:hover {
 
 
 @media(max-width: 860px) {
+
     .mainhead {
         grid-template-columns: 3fr 1fr;
+    }
+
+    #open-trigger {
+        display: flex;
     }
 
     #itemtrigger {
