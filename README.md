@@ -30,6 +30,8 @@
     <h2>Technologies Used</h2>
     <p>This website was built using the following technologies:</p>
     <ul>
+        <li>Python</li>
+        <li>Django</li>
       <li>HTML5</li>
       <li>CSS3</li>
       <li>JavaScript</li>
