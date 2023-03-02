@@ -42,7 +42,6 @@
     <h2>Acknowledgments</h2>
     <ul>
       <li>Bootstrap for providing an easy-to-use and customizable CSS framework.</li>
-      <li>Suraj Bajracharya's friends and family for their support and encouragement.</li>
     </ul>
     </body>
     </html>
