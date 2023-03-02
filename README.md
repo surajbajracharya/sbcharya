@@ -2,7 +2,7 @@
 <!DOCTYPE html>    
 <html>
     <body>
-    <h1>sbcharya</h1>
+    <h1>"sbcharya" is a Python - Django Project</h1>
     <p>This is the GitHub repository for sbcharya, a personal website created by Suraj Bajracharya.</p>
     <h2>About</h2>
     <p>sbcharya is a personal website created by Suraj Bajracharya to showcase his projects and skills. The website is built using HTML, CSS, and JavaScript, and is deployed on GitHub Pages.</p>
